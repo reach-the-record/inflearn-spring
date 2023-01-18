@@ -1,5 +1,6 @@
-package com.blog.inflearnspring;
+package com.blog.inflearnspring.scan;
 
+import com.blog.inflearnspring.AutoAppConfig;
 import com.blog.inflearnspring.member.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
