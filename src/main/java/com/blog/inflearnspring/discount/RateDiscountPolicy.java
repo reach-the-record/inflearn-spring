@@ -2,7 +2,9 @@ package com.blog.inflearnspring.discount;
 
 import com.blog.inflearnspring.member.Grade;
 import com.blog.inflearnspring.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy {
     private int discountPercent = 10;
 
