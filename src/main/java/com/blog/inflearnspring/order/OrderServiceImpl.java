@@ -1,5 +1,6 @@
 package com.blog.inflearnspring.order;
 
+import com.blog.inflearnspring.annotation.MainDiscountPolicy;
 import com.blog.inflearnspring.discount.DiscountPolicy;
 import com.blog.inflearnspring.member.Member;
 import com.blog.inflearnspring.member.MemberRepository;
@@ -12,7 +13,7 @@ public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
